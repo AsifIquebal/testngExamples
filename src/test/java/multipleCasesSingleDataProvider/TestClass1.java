@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.Objects;
 
 public class TestClass1 {
 
@@ -42,7 +43,7 @@ public class TestClass1 {
     @DataProvider(name = "getData")
     public Object[][] getData(Method method) throws IOException {
         ClassLoader classLoader = getClass().getClassLoader();
-        File file = new File(classLoader.getResource("TestData1.xlsx").getFile());
+        File file = new File(Objects.requireNonNull(classLoader.getResource("TestData1.xlsx")).getFile());
         System.out.println(file.getAbsolutePath());
 
         FileInputStream fis = new FileInputStream(file);
