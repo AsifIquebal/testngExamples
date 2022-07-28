@@ -26,7 +26,7 @@ public class Data {
         wb.close();
         int lastRowNum = sheet.getLastRowNum();
         int lastCellNum = sheet.getRow(0).getLastCellNum();
-        Object[][] obj = new Object[1][2];// this is the catch
+        Object[][] obj = new Object[1][lastCellNum];// this is the catch
         for (Row row : sheet) {
             Cell cell = row.getCell(0);
             if (cell.getStringCellValue().equalsIgnoreCase(method.getName())) {
@@ -44,5 +44,6 @@ public class Data {
         }*/
         return obj;
     }
+
 
 }
