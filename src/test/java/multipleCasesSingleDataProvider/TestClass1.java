@@ -21,22 +21,22 @@ public class TestClass1 {
     }
 
     @Test(dataProviderClass = Data.class, dataProvider = "getData")
-    public void test_02(String tc, String str) {
+    public void test_02(String tc, String str, String str1) {
         System.out.println(str);
     }
 
     @Test(dataProviderClass = Data.class, dataProvider = "getData")
-    public void test_03(String tc, String str) {
+    public void test_03(String tc, String str, String str1) {
         System.out.println(str);
     }
 
     @Test(dataProviderClass = Data.class, dataProvider = "getData")
-    public void test_04(String tc, String str) {
+    public void test_04(String tc, String str, String str1) {
         System.out.println(str);
     }
 
     @Test(dataProviderClass = Data.class, dataProvider = "getData")
-    public void test_05(String tc, String str) {
+    public void test_05(String tc, String str, String str1) {
         System.out.println(str);
     }
 

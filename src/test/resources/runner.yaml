@@ -1,0 +1,10 @@
+name: SingleSuite
+threadCount: 4
+#parameters: { n: 42 }
+
+tests:
+  - name: Regression2
+    #parameters: { count: 10 }
+    #excludedGroups: [ broken ]
+    packages:
+      - multipleCasesSingleDataProvider
