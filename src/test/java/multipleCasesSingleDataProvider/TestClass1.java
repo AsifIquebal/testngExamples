@@ -17,27 +17,27 @@ public class TestClass1 {
 
     @Test(dataProvider = "getData")
     public void test_01(String tc, String str, String str1) {
-        System.out.println(str);
+        System.out.println("Test Case: " + tc + ", Param value1: " + str + ", value2: " + str1);
     }
 
     @Test(dataProviderClass = Data.class, dataProvider = "getData")
     public void test_02(String tc, String str, String str1) {
-        System.out.println(str);
+        System.out.println("Test Case: " + tc + ", Param value1: " + str + ", value2: " + str1);
     }
 
     @Test(dataProviderClass = Data.class, dataProvider = "getData")
     public void test_03(String tc, String str, String str1) {
-        System.out.println(str);
+        System.out.println("Test Case: " + tc + ", Param value1: " + str + ", value2: " + str1);
     }
 
     @Test(dataProviderClass = Data.class, dataProvider = "getData")
     public void test_04(String tc, String str, String str1) {
-        System.out.println(str);
+        System.out.println("Test Case: " + tc + ", Param value1: " + str + ", value2: " + str1);
     }
 
     @Test(dataProviderClass = Data.class, dataProvider = "getData")
     public void test_05(String tc, String str, String str1) {
-        System.out.println(str);
+        System.out.println("Test Case: " + tc + ", Param value1: " + str + ", value2: " + str1);
     }
 
     @DataProvider(name = "getData")
